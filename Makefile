@@ -12,6 +12,7 @@ all: $(patsubst %.py,%.html,$(wildcard *.py))
 repl:
 	$(run) python
 
+.PHONY: clean
 clean:
 	rm -f *.html
 
